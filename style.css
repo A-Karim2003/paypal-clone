@@ -10,12 +10,7 @@
 :root {
   --primary-bg: #036bb1;
   --secondary-bg: #f3f7fa;
-  --linear-gradient: linear-gradient(
-    to right,
-    rgba(3, 33, 129, 0.9),
-    rgba(9, 67, 153, 0.8),
-    rgba(4, 32, 124, 0.9)
-  );
+  --linear-gradient: linear-gradient(to right, #066399, #2f8fdf, #066399);
 }
 
 html {
@@ -36,6 +31,9 @@ html {
 
 header {
   border-bottom: solid #bbb 1px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
 }
 
 .header-content {
@@ -76,32 +74,87 @@ header {
   left: 0.5rem;
 }
 
-/* NAV section */
+/*------------- NAV section---------------- */
 
-.main-nav {
+nav {
   display: flex;
-  gap: 2rem;
+  height: 100%;
+  align-items: center;
+}
+.nav-item-container {
+  height: 100%;
+}
+.nav-item-container:hover {
+  border-bottom: solid #bbb 1px;
 }
 
-.main-nav a {
+nav a {
   text-decoration: none;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
   padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
 }
 
-.main-nav a i {
+nav .nav-dropdown i {
   margin-left: 4px;
   transition: transform 0.3s;
 }
 
-/* handle drop down icon "dm" */
+/* handle drop down icon "nav-dropdown" */
 
-.dm:hover i {
+.nav-item-container:hover i {
   transform: rotate(180deg);
 }
 
+/* ===========handle dropdown menu================*/
+
+.drop-down {
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background: var(--linear-gradient);
+  top: 7rem;
+  left: 0;
+  visibility: hidden;
+}
+
+.drop-down.visible {
+  visibility: visible;
+}
+
+.drop-down-content {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.drop-down-content li {
+  width: 25rem;
+  color: white;
+  text-align: center;
+}
+.drop-down-content h4 {
+  font-family: 400;
+  font-size: 1.6rem;
+}
+.drop-down-content p {
+  font-size: 1.4rem;
+}
+
+/* ---------------------------------------------- */
 /* NAV buttons */
 
 .nav-buttons button {

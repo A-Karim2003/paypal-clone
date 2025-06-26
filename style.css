@@ -232,6 +232,7 @@ nav .nav-dropdown i {
 
 /* ===================Main Section================== */
 
+/* -------------.customer-segments-section---------- */
 .customer-segments-section {
   background-color: var(--secondary-bg);
   width: 100%;
@@ -293,4 +294,38 @@ nav .nav-dropdown i {
   color: white;
   background-color: var(--primary-bg);
   border-radius: 8rem;
+}
+
+/* ----------------SERVICE SECTION---------------- */
+
+.service-section {
+  background-image: var(--linear-gradient);
+  padding: 10rem 5rem 5rem;
+}
+.service-section .section-heading {
+  color: white;
+}
+
+.services {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 1.5rem;
+}
+
+.featured-item {
+  width: 450px;
+  text-align: center;
+  color: white;
+}
+.featured-item h3 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.featured-item p {
+  font-size: 1.6rem;
 }

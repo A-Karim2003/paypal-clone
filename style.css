@@ -244,7 +244,8 @@ nav .nav-dropdown i {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .section-heading {
@@ -318,14 +319,53 @@ nav .nav-dropdown i {
 }
 
 .featured-item {
-  width: 450px;
+  width: 350px;
   text-align: center;
   color: white;
 }
 .featured-item h3 {
   font-size: 2rem;
-  font-weight: 100;
 }
 .featured-item p {
   font-size: 1.6rem;
+}
+/* ----------------PROCESS SECTION---------------- */
+
+.process-section {
+  padding: 10rem 5rem 5rem;
+}
+
+.setups-container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 1.5rem;
+}
+
+.setups-container img {
+  width: 45rem;
+  object-fit: cover;
+}
+
+.setup-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.setup-steps li {
+  list-style-type: decimal;
+  font-size: 1.6rem;
+}
+
+/* customise the list number */
+ol li::marker {
+  color: var(--primary-bg);
+  font-size: 2rem;
+  font-weight: bold;
 }

@@ -369,3 +369,82 @@ ol li::marker {
   font-size: 2rem;
   font-weight: bold;
 }
+
+/* ----------------Get Started SECTION-------------- */
+
+.get-started-section {
+  background-color: #f3f7fa;
+  padding: 10rem 5rem 5rem;
+}
+
+.get-started-section .section-heading {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.get-started-section button {
+  font-size: 1.8rem;
+  background-color: var(--primary-bg);
+  border: none;
+  padding: 1rem 8rem;
+  color: white;
+  border-radius: 4rem;
+  opacity: 0.9;
+  transition: 0.4s;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+.get-started-section button:hover {
+  color: var(--primary-bg);
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ----------------footer SECTION-------------- */
+
+footer {
+  padding: 5rem;
+}
+.footer-contents {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 1.5rem;
+}
+
+.footer-contents ul {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  gap: 1rem;
+}
+
+.footer-contents ul li a {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.right-footer-container img {
+  width: 4rem;
+  object-fit: cover;
+}
+
+footer hr {
+  border: none;
+  border: 1px dashed #ccc;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.Copyright {
+  font-size: 1.4rem;
+  text-align: center;
+}

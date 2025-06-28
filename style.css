@@ -17,6 +17,12 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+
+.container {
+  overflow: hidden;
+  height: auto;
+}
+
 main {
   width: 100%;
 }
@@ -40,9 +46,59 @@ main {
 
 header {
   border-bottom: solid #bbb 1px;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 10;
+}
+
+.menu-container {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid white 1px;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 3rem;
+  display: none;
+  transition: left 0.3s ease;
+}
+
+.menu-container.active {
+  left: 25rem;
+}
+
+.menu-container i {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* Media query adding menu */
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+
+  /* make menu visible*/
+  .menu-container {
+    display: flex;
+  }
+
+  .nav-buttons {
+    position: absolute;
+    right: 8em;
+  }
+}
+
+/* Media query for removing logo */
+@media (max-width: 768px) {
+  header .logo {
+    display: none;
+  }
 }
 
 .header-content {
@@ -55,6 +111,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 /* Logo */
@@ -447,4 +504,86 @@ footer hr {
 .Copyright {
   font-size: 1.4rem;
   text-align: center;
+}
+
+/* ================Sidebar Section=============== */
+
+aside {
+  padding-top: 2rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -24rem;
+  width: 20rem;
+  z-index: 12;
+  background-color: #036bb1;
+  transition: left 0.3s ease;
+}
+
+.sidebar-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+
+@media (min-width: 992px) {
+  aside {
+    display: none;
+  }
+}
+
+aside.active {
+  left: 0;
+}
+
+aside a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 100;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: block;
+}
+
+aside a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+aside i {
+  margin-left: 4px;
+  transition: transform 0.3s;
+  transform: rotate(-90deg);
+}
+
+/* =================Sidebar dropdown============== */
+.sidebar-nav-container {
+  position: absolute;
+  width: 100%;
+  border: solid red;
+}
+
+/* the inner sidebar */
+.sidebar-dropdown {
+  box-sizing: content-box;
+  background-color: #036bb1;
+  color: white;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 22rem;
+  left: -100%;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar-dropdown.active {
+  left: 0;
+  z-index: 15;
+}
+
+/* inner sidebar icon */
+.sidebar-dropdown i {
+  transform: rotate(90deg);
+  margin-right: 4px;
 }

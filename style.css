@@ -69,7 +69,7 @@ header {
 }
 
 .menu-container.active {
-  left: 25rem;
+  left: 22rem;
 }
 
 .menu-container i {
@@ -98,6 +98,16 @@ header {
 @media (max-width: 768px) {
   header .logo {
     display: none;
+  }
+}
+@media (max-width: 560px) {
+  .menu-container {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -558,10 +568,20 @@ aside i {
 }
 
 /* =================Sidebar dropdown============== */
-.sidebar-nav-container {
+.sidebar-nav-container,
+.three {
   position: absolute;
   width: 100%;
-  border: solid red;
+}
+
+.sidebar-nav-container:nth-last-of-type(1) {
+  top: 0;
+}
+.sidebar-nav-container:nth-last-of-type(2) {
+  top: 5rem;
+}
+.three {
+  top: 10rem;
 }
 
 /* the inner sidebar */

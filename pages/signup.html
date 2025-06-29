@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>sign up</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -16,13 +16,18 @@
     <header>
 
         <div class="header-content">
-            <div class="logo">
-                <span class="p-1">P</span>
-                <span class="p-2">P</span>
-                PayPal
-            </div>
+            <a href="/pages/index.html">
 
-            <button class="login-btn">Login</button>
+                <div class="logo">
+                    <span class="p-1">P</span>
+                    <span class="p-2">P</span>
+                    PayPal
+                </div>
+            </a>
+
+            <a href="/pages/login.html">
+                <button class="login-btn">Login</button>
+            </a>
         </div>
 
     </header>
@@ -52,7 +57,7 @@
             <h3>Sign up for PayPal, it's free</h3>
             <p>Chose from two types of accounts:</p>
 
-            <form>
+            <form action="/pages/index.html">
 
                 <div class="radio-group">
                     <input type="radio" name="accountType" id="personal" checked>
@@ -82,7 +87,7 @@
                     </label>
                 </div>
 
-                <button>Continue</button>
+                <button type="submit">Continue</button>
             </form>
 
         </div>

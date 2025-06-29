@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-decoration: none;
   box-sizing: border-box;
   font-family: "Baloo Da 2", cursive;
 }
@@ -99,6 +100,7 @@ form p {
   color: #32a4f0;
   font-size: 1.4rem;
   text-align: center;
+  cursor: pointer;
 }
 
 .line {

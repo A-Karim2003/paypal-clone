@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  text-decoration: none;
   box-sizing: border-box;
   font-family: "Baloo Da 2", cursive;
 }
@@ -78,7 +79,6 @@ header {
 }
 
 section {
-  border: solid;
   display: flex;
   max-width: 1440px;
   width: 100%;

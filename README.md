@@ -4,7 +4,7 @@ A simple front-end clone of PayPal using HTML, CSS, and JavaScript.
 
 ## 🔗 Live Demo
 
-[View Live Site](https://your-demo-link.com)
+[View Live Site](https://a-karim2003.github.io/paypal-clone/)
 
 ## 📄 Pages
 

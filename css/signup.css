@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Baloo Da 2", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  height: 15rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(112, 112, 112, 0.9),
+    rgba(255, 255, 255, 0.8) 100%
+  );
+}
+
+.header-content {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-style: italic;
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.logo .p-1 {
+  font-size: 4.5rem;
+  margin-right: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.p-2 {
+  font-size: 4.5rem;
+  color: #bbb;
+  position: absolute;
+  top: 0.4rem;
+  left: 0.5rem;
+}
+
+.login-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.login-btn:hover {
+  opacity: 1;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: solid white 1px;
+  margin-right: 1rem;
+  color: white;
+}
+
+section {
+  border: solid;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* left section */
+
+.profiles {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.profile-pic {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  border: solid #cccccc 10px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.line {
+  height: auto;
+  width: 2px;
+  background-color: #cccccc;
+  margin: 0 2rem;
+}
+
+/* Right section */
+
+.right h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.right p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.radio-group {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.radio-group input {
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.radio-group label {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.radio-group label strong {
+  font-size: 2rem;
+}
+
+form button {
+  width: 35rem;
+  height: 5rem;
+  background-color: #036bb1;
+  color: #fff;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.left,
+.right {
+  width: 50%;
+}
